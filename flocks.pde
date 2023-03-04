@@ -20,6 +20,7 @@ class Flock{
   Quadtree qtree(){
     Quadtree qtree = new Quadtree(0,0,extentW + 10f, extentH + 10f);
     for (Agent a:agents){qtree.add(a);}
+    //qtree.debugShow();
     return qtree;
   }
   

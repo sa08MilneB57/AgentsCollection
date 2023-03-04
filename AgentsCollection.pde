@@ -10,7 +10,8 @@ PVector randomBox(float w, float h) {return new PVector(random(w)-0.5*w, random(
   
 
 void setup(){
-  fullScreen();
+  //fullScreen();
+  size(1920,1080,P2D);
   walls[0] =  new BoxContainer();
   reseed();
 }
@@ -30,7 +31,7 @@ void reseed(long seed){
   println(seed);
   randomSeed(seed);
   lastseed = seed;
-  sim = new ParticleLife(9,200,0.5,3);
+  sim = new ParticleLife(12,500,0.5,3);
   background(0);
 }
 
